@@ -8,5 +8,6 @@ namespace CalculatorMG.Services
         Task<Calculator> Subtraction(Calculator calculator);
         Task<Calculator> Multiplication(Calculator calculator);
         Task<Calculator> Division(Calculator calculator);
+        public Calculator Calculate(Calculator calculator);
     }
 }
