@@ -11,7 +11,7 @@ namespace CalculatorMG.Services
             
             if (calculator.FirstNumber != null && calculator.SecondNumber != null)
             {
-                calculator.ResultNumber = (double)calculator.FirstNumber + (double)calculator.SecondNumber;
+                calculator.ResultNumber = (decimal)calculator.FirstNumber + (decimal)calculator.SecondNumber;
                 return calculator;
             }
             else
@@ -27,7 +27,7 @@ namespace CalculatorMG.Services
             {
                 if (calculator.SecondNumber != 0)
                 {
-                    calculator.ResultNumber = (double)calculator.FirstNumber / (double)calculator.SecondNumber;
+                    calculator.ResultNumber = Math.Round((decimal)calculator.FirstNumber / (decimal)calculator.SecondNumber,8);
                     return calculator;
                 }
                 else
@@ -47,7 +47,7 @@ namespace CalculatorMG.Services
         {
             if (calculator.FirstNumber != null && calculator.SecondNumber != null)
             {
-                calculator.ResultNumber = (double)calculator.FirstNumber * (double)calculator.SecondNumber;
+                calculator.ResultNumber = (decimal)calculator.FirstNumber * (decimal)calculator.SecondNumber;
                 return calculator;
             }
             else
@@ -61,7 +61,7 @@ namespace CalculatorMG.Services
         {
             if (calculator.FirstNumber != null && calculator.SecondNumber != null)
             {
-                calculator.ResultNumber = (double)calculator.FirstNumber - (double)calculator.SecondNumber;
+                calculator.ResultNumber = (decimal)calculator.FirstNumber - (decimal)calculator.SecondNumber;
                 return calculator;
             }
             else

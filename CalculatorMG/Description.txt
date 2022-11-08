@@ -1,0 +1,17 @@
+﻿This is the Calculator Web App. This application let you calculate value from two numbers which you gave. 
+
+In app, there are four implemented types of calculations: addition, subtraction, multiplication, division. 
+
+To start you need to declare two numbers, each in proper input box. That numbers are defined with "decimal" type. 
+
+It means that range if that numbers should be enough, even though you can insert non integer values. 
+
+To start operation, you should choose kind of calculation via pressing the button with proper symbol: 
+
+"+" for addition, "-" for subtraction, "*" for multiplication, "/" for division. If you pick press button with 
+
+operation before declaring starting numbers, you should see error message, that please you to fill missing numbers. 
+
+If operation is made correctly the result will be visible under buttons. There is one another button "Clear", which 
+
+removes input and result values and show starting position. 

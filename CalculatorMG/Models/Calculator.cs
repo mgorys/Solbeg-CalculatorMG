@@ -2,9 +2,9 @@
 {
     public class Calculator
     {
-        public double? FirstNumber { get; set; }
-        public double? SecondNumber { get; set; }
-        public double ResultNumber { get; set; }
+        public decimal? FirstNumber { get; set; }
+        public decimal? SecondNumber { get; set; }
+        public decimal ResultNumber { get; set; }
         public string? ErrorMessage { get; set; }
 
     }
