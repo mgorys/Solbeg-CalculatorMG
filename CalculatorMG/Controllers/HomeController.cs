@@ -35,26 +35,25 @@ namespace CalculatorMG.Controllers
         {
             var result = new Calculator();
 
-            if (calculate == "addition")
+            switch (calculate)
             {
-                result = await _calculatorService.Addition(calculator);
-            }
-            if (calculate =="subtraction")
-            {
-                result = await _calculatorService.Subtraction(calculator);
-            }
-            if (calculate == "multiplication")
-            {
-                result = await _calculatorService.Multiplication(calculator);
-            }
-            if (calculate == "division")
-            {
-                result = await _calculatorService.Division(calculator);
+                case "addition":
+                    result = await _calculatorService.Addition(calculator);
+                    break;
+
+                case "subtraction":
+                    result = await _calculatorService.Subtraction(calculator);
+                    break;
+
+                case "multiplication":
+                    result = await _calculatorService.Multiplication(calculator);
+                    break;
+
+                case "division":
+                    result = await _calculatorService.Division(calculator);
+                    break;
             }
             return View("Index", result);
-            
         }
-
-
     }
 }
